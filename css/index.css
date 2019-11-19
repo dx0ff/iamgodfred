@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background: #0095d3;
+    font-weight: 300;
+}
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    float: left;
+    margin: 5px;
+    padding-top: 40px 0;
+}
+
+nav{
+    float: right;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444444;
+    font-size: 14px;
+}
+
+nav li{
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: 70px;
+}
+nav ul{
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header{
+    background: #22ad66;
+}
