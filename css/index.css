@@ -16,7 +16,7 @@ header::after{
 
 .logo{
     float: left;
-    margin: 5px;
+    margin: 3px;
     padding-top: 40px 0;
 }
 
@@ -35,6 +35,8 @@ nav li{
     padding-top: 25px;
     display: inline-block;
     margin-left: 70px;
+
+    position: relative;
 }
 nav ul{
 
@@ -44,4 +46,26 @@ nav ul{
 }
 header{
     background: #22ad66;
+}
+nav a::before{
+
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+nav a:hover{
+
+    color: #000;
+}
+
+nav a:hover::before{
+
+    width: 100%;
 }
