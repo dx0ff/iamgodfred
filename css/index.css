@@ -6,7 +6,8 @@
 /* Styles for all elements */
 * {
     /* outline: 4px solid blue; use outline to visualize the-box-model */
-    outline: none !important;
+    /* outline: none !important; */
+    outline: 4px solid blue !important;
     transition: all ease-in-out 250ms;
 }
 
@@ -116,7 +117,7 @@ section {
 .start {
     padding: 80px;
     background-color: rgb(65, 116, 116, .9);
-    height: 400px;
+    height: 440px;
     align-items: center;
     color: #211e1e;
 }
@@ -149,9 +150,9 @@ section {
 }
 
 .button {
-    padding: 40px;
+    padding: 6px;
     width: 200px;
-    height: 100px;
+    height: 80px;
     box-sizing: border-box;
     display: block;
     margin: 0px auto;
@@ -167,6 +168,7 @@ section {
 
 .bitcoin-whitepaper {
     text-decoration: none;
+    display: block;
 }
 
 .middle p {
@@ -184,6 +186,6 @@ section {
     opacity: 0; */
 }
 
-/* .button:hover:hover:after {
-    opacity: 0.4;
-} */
+.third-main-div.container {
+    width: 200px;
+}
