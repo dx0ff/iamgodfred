@@ -116,7 +116,7 @@ section {
 .start {
     padding: 80px;
     background-color: rgb(65, 116, 116, .9);
-    height: 320px;
+    height: 400px;
     align-items: center;
     color: #211e1e;
 }
@@ -124,7 +124,7 @@ section {
 .middle {
     padding: 80px;
     background-color: rgb(37, 77, 77);
-    height: 350px;
+    height: 400px;
 }
 
 .end {
