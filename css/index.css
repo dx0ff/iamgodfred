@@ -1,62 +1,75 @@
-*{
-    outline: 4px solid blue;
+@font-face {
+    font-family: "Dang";
+    src: url(/fonts/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
+}
+
+/* Styles for all elements */
+* {
+    /* outline: 4px solid blue; use outline to visualize the-box-model */
     outline: none !important;
     transition: all ease-in-out 250ms;
 }
-body{
+
+/* Styles for the body */
+body {
     margin: 0;
-    /* background-color: #334257; */
     font-weight: 300;
     font-size: 25px;
     color: #EEEEEE;
+
 }
 
-header::after{
+header::after {
     content: "";
     display: table;
     clear: both;
 }
-.container{
+
+.container {
     width: 80%;
     margin: 0 auto;
     outline: 5px solid rgb(245, 141, 141);
     font-size: 28px;
 }
 
-.logo{
+.logo {
     float: left;
     margin: 3px;
     padding-top: 40px 0;
 }
 
-nav{
-    float: right; 
+nav {
+    float: right;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     text-transform: uppercase;
     color: #EEEEEE;
     font-size: 13px;
+
 }
 
-nav li{
+nav li {
     padding-top: 25px;
     display: inline-block;
     margin-left: 70px;
 
     position: relative;
 }
-nav ul{
+
+nav ul {
 
     margin: 0;
     padding: 0;
     list-style: none;
 }
-header{
+
+header {
     background-color: rgb(37, 77, 77);
 }
-nav a::before{
+
+nav a::before {
 
     content: "";
     display: block;
@@ -69,17 +82,18 @@ nav a::before{
 
     transition: all ease-in-out 250ms;
 }
-nav a:hover{
+
+nav a:hover {
 
     color: #000;
 }
 
-nav a:hover::before{
-
+nav a:hover::before {
+    background-color: rgb(26, 14, 14);
     width: 100%;
 }
 
-header:hover{
+header:hover {
     transform: translateY(-3px);
     box-shadow: 5px 8px 8px rgb(26, 14, 14);
 }
@@ -98,28 +112,32 @@ section {
     width: 80% auto;
     overflow: hidden;
 }
-.start{
+
+.start {
     padding: 80px;
-    background-color: rgb(65, 116, 116,.9);
+    background-color: rgb(65, 116, 116, .9);
     height: 320px;
     align-items: center;
     color: #211e1e;
 }
 
-.middle{
+.middle {
     padding: 80px;
     background-color: rgb(37, 77, 77);
     height: 350px;
 }
+
 .end {
     background-color: rgb(37, 77, 77);
     height: 250px;
 }
+
 .end:hover {
     background-color: rgb(42, 90, 96);
 
 }
-.first-main-div { 
+
+.first-main-div {
     padding: 20px;
     outline: 5px solid rgb(70, 55, 55);
 
@@ -129,7 +147,7 @@ section {
     padding: 2px;
 }
 
-.button{
+.button {
     padding: 40px;
     width: 200px;
     height: 100px;
@@ -137,9 +155,10 @@ section {
     display: block;
     margin: 0px auto;
     background: rgb(35, 91, 91);
+    color: #EEEEEE;
 }
 
-.button:hover{
+.button:hover {
     background: rgb(37, 92, 94);
     transform: translateY(-6px);
     box-shadow: 3px 4px 9px rgb(37, 77, 77);
@@ -148,3 +167,22 @@ section {
 .bitcoin-whitepaper {
     text-decoration: none;
 }
+
+.middle p {
+    font-family: "Dang"
+}
+
+.button:hover:after {
+    content: "DYOR!!!";
+    background-color: rgb(78, 71, 71);
+    color: rgb(207, 198, 198);
+
+    position: absolute;
+    margin-left: 80px;
+    /* transition: opacity 0.6s;
+    opacity: 0; */
+}
+
+/* .button:hover:hover:after {
+    opacity: 0.4;
+} */
